@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<htm lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/styles.css" />
+
+        <link rel="stylesheet" href="../static/css/loginStyle.css">
+
+        <link rel="shortcut icon"
+            href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
+            type="image/x-icon" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+        <title>Flipkart</title>
+    </head>
+
+    <body>
+        <div class="content">
+
+            <!-- Navigation Bar -->
+
+            <nav class="heading_navigation flex" id="navigation_heading">
+                <div class="nav_container flex">
+                    <div class="logo flex">
+                        <a href="#" class="flip_logo">
+                            <img src="../static/images/flipkartIcons/flipkart.png" alt="logo" />
+                        </a>
+                        <a href="#" class="anchor plus">
+                            Explore
+                            <span class="plus_lan">
+                                Plus
+                                <img src="../static/images/flipkartIcons/plus.png" alt="logo" />
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="search_bar_container">
+                        <div class="search_bar">
+                            <form class="search flex">
+                                <input type="text" placeholder="Search for products, brands and more"
+                                    class="search_box" />
+                                <button class="btn_search"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="login" id="loginBtn">
+                        <a href="#" class="login_btn">Login</a>
+                    </div>
+
+                    <div class="seller">
+                        <span class="seller_lan">Become a Seller</span>
+                    </div>
+
+                    <div class="more">
+                        <span class="more_lan">More <i class="fa fa-angle-down"></i></span>
+                    </div>
+
+
+                    <div class="cart">
+                        <span class="cart_lan"><i class="fa fa-shopping-cart"></i> Cart</span>
+                    </div>
+
+                </div>
+            </nav>
+
+
+
+            <!-- Heading Categories -->
+
+            <div class="heading_categories flex">
+                <ul class="heading_category_list flex">
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/TopOffers.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Top Offers</p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Grocery.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Grocery</p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Mobiles.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Mobiles</p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Fashion.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Fashion <i class="fa fa-angle-down"></i></p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Electronics.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Electronics <i class="fa fa-angle-down"></i></p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Home.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Home <i class="fa fa-angle-down"></i></p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static//images/headingIcons/Appliances.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Appliances <i class="fa fa-angle-down"></i></p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Travel.png" alt="loadinng image" class="cat_image">
+                        <p class="heading_item_name">Travel</p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/BeautyToys.png" alt="loading image" class="cat_image">
+                        <p class="heading_item_name">Beauty, Toys & More <i class="fa fa-angle-down"></i></p>
+                    </li>
+                    <li class="heading_category_items">
+                        <img src="../static/images/headingIcons/Electric2Wheeler.png" alt="loading image"
+                            class="cat_image">
+                        <p class="heading_item_name">Electric 2-Wheelers</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Corousel -->
+
+            <div id="carouselExampleControls" class="carousel slide corousel_item_container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/images/corousel/corousel1.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/corousel/corousel2.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/corousel/corousel3.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/corousel/corousel4.png" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/images/corousel/corousel5.png" class="d-block" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <!-- Items  1 -->
+
+            <div class="items_container">
+                <div class="items_header">
+                    <div class="item_heading">
+                        <h1 class="item_main_heading">Beauty, Food, Toys & more</h1>
+                        <h4 class="item_sub_heading">Beauty, Food, Toys & more</h4>
+                    </div>
+                    <div>
+                        <input type="button" value="VIEW ALL" class="items_btn">
+                    </div>
+                </div>
+
+
+                <div class="items_contents">
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/stationary.jpeg" alt="img">
+                        <div class="item_name">Top Selling Stationary</div>
+                        <div class="item_offer">From ₹40</div>
+                        <div class="item_desc">Pens, Notebooks & more</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/RiderHelmets.jpeg" alt="img">
+                        <div class="item_name">Rider Helmets</div>
+                        <div class="item_offer">From ₹699</div>
+                        <div class="item_desc">Vega, Steelbird, HRX and ...</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/StringInstruments.jpeg" alt="img">
+                        <div class="item_name">String Instruments</div>
+                        <div class="item_offer">Up to 70% off</div>
+                        <div class="item_desc">Guitars, Ukuleles & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/BabyGear.jpeg" alt="img">
+                        <div class="item_name">Baby Gear</div>
+                        <div class="item_offer">Up to 70% off</div>
+                        <div class="item_desc">MeeMee & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/Headphones.jpeg" alt="img">
+                        <div class="item_name">Studio Headphones</div>
+                        <div class="item_offer">Up to 80% off</div>
+                        <div class="item_desc">Explore Now!</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/FoodSpreads.jpeg" alt="img">
+                        <div class="item_name">Food Spreads</div>
+                        <div class="item_offer">Up to 75% off</div>
+                        <div class="item_desc">Myfiness, Alpino & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Beauty_food/tricycles.jpeg" alt="img">
+                        <div class="item_name">Tricycles & Rideons</div>
+                        <div class="item_offer">Up to 70% off</div>
+                        <div class="item_desc">Figurines, Battle Toys & ...</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Items  2 -->
+
+            <div class="items_container">
+                <div class="items_header">
+                    <div class="item_heading">
+                        <h1 class="item_main_heading">Sports, Healthcare & more</h1>
+                        <h4 class="item_sub_heading">Sports, Healthcare & more</h4>
+                    </div>
+                    <div>
+                        <input type="button" value="VIEW ALL" class="items_btn">
+                    </div>
+                </div>
+
+
+                <div class="items_contents">
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/cricket.jpeg" alt="img">
+                        <div class="item_name">Cricket</div>
+                        <div class="item_offer">Up to 45% off</div>
+                        <div class="item_desc">CEAT, MRF & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/dumbell.jpeg" alt="img">
+                        <div class="item_name">Dumbbell</div>
+                        <div class="item_offer">Up to 45% off</div>
+                        <div class="item_desc">PROWL, HRX & KRX</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/Footballs.jpeg" alt="img">
+                        <div class="item_name">Premium Footballs</div>
+                        <div class="item_offer">Up to 60% off</div>
+                        <div class="item_desc">Nivia, Cosco & more</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/AbExerciser.jpeg" alt="img">
+                        <div class="item_name">Ab Excerciser</div>
+                        <div class="item_offer">From ₹199</div>
+                        <div class="item_desc">Adrenex, Manogyam & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/MusicalToy.jpeg" alt="img">
+                        <div class="item_name">Musical Toys</div>
+                        <div class="item_offer">Under ₹199</div>
+                        <div class="item_desc">Top-Selling To</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/mensGrooming.jpeg" alt="img">
+                        <div class="item_name">Men's Grooming</div>
+                        <div class="item_offer">Upto 40% Off</div>
+                        <div class="item_desc">Ustraa,Gillette & More</div>
+                    </div>
+                    <div class="item">
+                        <img class="item_image" src="../static/images/Sports/yogaMatt.jpeg" alt="img">
+                        <div class="item_name">Yoga Mat</div>
+                        <div class="item_offer">From ₹349</div>
+                        <div class="item_desc">beatXP, HRX & Adrenex</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer  -->
+
+            <footer>
+
+                <div class="footer-row">
+                    <div class="footer-col-1">
+                        <div class="footer-heading">
+                            <p>ABOUT</p>
+                        </div>
+                        <div class="footer-list">
+                            <a href="#">Contact Us</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Flipkart Stories</a>
+                            <a href="#">Press</a>
+                            <a href="#">Flipkart Wholesale</a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <div class="footer-heading">
+                            <p>HELP</p>
+                        </div>
+                        <div class="footer-list">
+                            <a href="#">Payments</a>
+                            <a href="#">Shipping</a>
+                            <a href="#">Cancellation & Returns</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Report Infringement</a>
+
+                        </div>
+                    </div>
+                    <div class="footer-col-3">
+                        <div class="footer-heading">
+                            <p>POLICY</p>
+                        </div>
+                        <div class="footer-list">
+                            <a href="#">Return Policy</a>
+                            <a href="#">Terms Of Use</a>
+                            <a href="#">Security</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">EPR Compliance</a>
+                        </div>
+                    </div>
+                    <div class="footer-col-4">
+                        <div class="footer-heading">
+                            <p>SOCIAL</p>
+                        </div>
+                        <div class="footer-list">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">YouTube</a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-col-5">
+                        <div class="footer-heading">
+                            <p>Mail Us</p>
+                        </div>
+                        <div class="footer-list">
+                            <p>Flipkart Internet Private Limited,
+                                Buildings Alyssa, Begonia &
+                                Clove Embassy Tech Village,
+                                Outer Ring Road, Devarabeesanahalli Village,
+                                Bengaluru, 560103,
+                                Karnataka, India</p>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-col-6">
+                        <div class="footer-heading">
+                            <p>Registered Office Address</p>
+                        </div>
+                        <div class="footer-list-address">
+                            <p>Flipkart Internet Private Limited,</p>
+                            <p>Buildings Alyssa, Begonia &</p>
+                            <p>Clove Embassy Tech Village,</p>
+                            <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                            <p>Bengaluru, 560103,</p>
+                            <p>Karnataka, India</p>
+                            <p>CIN : U51109KA2012PTC066107 </p>
+                            <p> Telephone:<span> 044-45614700</span></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-row2">
+                    <div class="footer-row2-col">
+                        <p> <i class="fa fa-shopping-bag"></i>Sell On Flipkart</p>
+                    </div>
+                    <div class="footer-row2-col">
+                        <p><i class="fa fa-star"></i>Advertise</p>
+                    </div>
+                    <div class="footer-row2-col">
+                        <p><i class="fa fa-gift"></i>Gift Cards</p>
+                    </div>
+                    <div class="footer-row2-col">
+                        <p><i class="fa fa-question-circle"></i>Help Center</p>
+                    </div>
+                    <div class="footer-row2-col">
+                        <p>© 2007-2022 Flipkart.com</p>
+                    </div>
+                    <div class="footer-row2-col">
+                        <img src="../static/images/flipkartIcons/payment.png" alt="payments">
+                    </div>
+                </div>
+            </footer>
+
+            <div id="blur"></div>
+
+        </div>
+
+
+        <!-- login page  -->
+
+        <div class="container">
+            <div class="box" id="box">
+                <div class="row">
+                    <div class="box1 col-sm-4">
+                        <div class="inline-text">
+                            <h1>Login</h1>
+                            <p>
+                                Get access to your<br />
+                                Orders, Wishlist and<br />
+                                Recomadations
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-1 box2">
+                        <form name="login_form">
+                            <div class="user-id user-data">
+                                <input type="text" name="phone" autofocus autocomplete="off" required/>
+                                <label>Mobile Number</label>
+                                <div class="phone_error error_msg">lllkkllk</div>
+                            </div>
+                            <div class="user-id user-data">
+                                <input type="password" name="password" required />
+                                <label>Enter Password</label>
+                                <div class="psw_error error_msg">lllkkllk</div>         
+                            </div>
+                            <span><a href="#">Forgot?</span></a>
+                            
+                            <div class="user-id button">
+                                <div class="policy">
+                                    By continuing, you agree to Flipkart's
+                                    <a href="#">Terms of Use </a>
+                                    and
+                                    <a href="#">Privacy Policy.</a>
+                                </div>
+                                
+                                <input type="submit" id="loginSubmit" value="Login" />
+                            </div>
+                            <div class="user-id">
+                                <p>OR</p>
+                            </div>
+                            <div class="user-id button">
+                                <input type="reset" value="Request OTP" />
+                            </div>
+                        </form>
+                        <div class="user-id">
+                            <a class="footer" href="#">New to Flipkart? Create an account</a>
+                        </div>
+                    </div>
+                    <div class="close_btn" id="closeBtn">✕</div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../static/js/script.js"></script>
+        
+    </body>
+
+    </html>
