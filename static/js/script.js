@@ -2,8 +2,11 @@ let loginBox = document.querySelector("#box")
 let bgBlur = document.querySelector("#blur")
 
 document.querySelector("#loginBtn").addEventListener("click", () => {
+    
     loginBox.style.display = 'block'
     bgBlur.style.display = 'block'
+
+    document.login_form.phone.focus()
 })
 
 document.querySelector("#closeBtn").addEventListener("click", () => {
